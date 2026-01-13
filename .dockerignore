@@ -1,0 +1,10 @@
+node_modules
+dist
+.nx/cache
+.nx/workspace-data
+coverage
+npm-debug.log
+.git
+.vscode
+.idea
+.DS_Store

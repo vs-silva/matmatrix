@@ -1,10 +1,12 @@
 import { defineConfig } from 'vitest/config';
-import path from 'path';
 
 export default defineConfig({
   root: __dirname,
   cacheDir: '../../node_modules/.vitest/libs/matmatrix-core',
   test: {
+    server: {
+      host: '0.0.0.0',
+    },
     watch: false,
     globals: true,
     environment: 'node',

@@ -1,0 +1,21 @@
+services:
+  workspace:
+    build:
+      context: .
+      target: base
+    volumes:
+      - .:/app
+      - /app/node_modules # Anonymous volume to protect container node_modules
+    environment:
+      - NX_REJECT_UNKNOWN_LOCAL_CACHE=0
+    # Command to keep the container alive for development
+    command: tail -f /dev/null
+
+  test-core:
+    build:
+      context: .
+      target: base
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: npx nx test matmatrix-core --watch
