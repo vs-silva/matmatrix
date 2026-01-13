@@ -11,6 +11,19 @@ services:
     # Command to keep the container alive for development
     command: tail -f /dev/null
 
+  app:
+    build:
+      context: .
+      target: base
+    volumes:
+      - .:/app
+      - /app/node_modules
+    ports:
+      - "4211:4211"
+    environment:
+      - NX_HOST=0.0.0.0
+    command: npx nx graph --host 0.0.0.0 --port 4211
+
   test-core:
     build:
       context: .
