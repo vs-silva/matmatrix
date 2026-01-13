@@ -41,7 +41,8 @@ A high-fidelity administrative dashboard built with Vue 3 and the Composition AP
 - **Testability**: Facilitates TDD by keeping business rules pure and testable.
 - **Resilience**: Ensures the core remains robust against infrastructure changes.
 
-#### Tech Stack
+#### Tech Stack && Tools
 - **Language**: Javascript and Typescript
-- **Runtime**: Node.js
-- **Test Framework**: Vitest
+- **Build System**: NX
+- **UI Framework**: Vue 3
+- **State Management**: Pinia
