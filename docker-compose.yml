@@ -11,7 +11,7 @@ services:
     # Command to keep the container alive for development
     command: tail -f /dev/null
 
-  app:
+  matmatrix-graph:
     build:
       context: .
       target: base
@@ -24,7 +24,7 @@ services:
       - NX_HOST=0.0.0.0
     command: npx nx graph --host 0.0.0.0 --port 4211
 
-  test-core:
+  matmatrix-core:
     build:
       context: .
       target: base
