@@ -5,11 +5,13 @@
   "scripts": {
     "reset": "npx nx reset",
     "graph:docker": "nx graph --host 0.0.0.0 --port 4211",
-    "test:core": "npx nx test matmatrix-core"
+    "test:core": "npx nx test matmatrix-core",
+    "test:core:watch": "npx nx test matmatrix-core --watch"
   },
   "private": true,
   "devDependencies": {
     "@eslint/js": "^9.8.0",
+    "@faker-js/faker": "^10.2.0",
     "@nx/eslint": "22.3.3",
     "@nx/eslint-plugin": "22.3.3",
     "@nx/js": "22.3.3",
