@@ -6,7 +6,7 @@
     "reset": "npx nx reset",
     "graph:docker": "nx graph --host 0.0.0.0 --port 4211",
     "test:core": "npx nx test matmatrix-core",
-    "test:core:watch": "npx nx test matmatrix-core --watch"
+    "test:core:coverage": "npx nx test matmatrix-core --codeCoverage"
   },
   "private": true,
   "devDependencies": {
