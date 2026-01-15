@@ -5,6 +5,8 @@
   "scripts": {
     "reset": "npx nx reset",
     "graph:docker": "nx graph --host 0.0.0.0 --port 4211",
+    "lint": "npx nx run-many -t lint",
+    "lint:core": "npx nx lint matmatrix-core",
     "test:core": "npx nx test matmatrix-core",
     "test:core:coverage": "npx nx test matmatrix-core --codeCoverage"
   },
